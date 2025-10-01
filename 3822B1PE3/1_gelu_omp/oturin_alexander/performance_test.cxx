@@ -7,7 +7,7 @@
 #include "gelu_omp.hpp"
 #include "gelu_sequential.hpp"
 
-#define SEQUENTIAL_RUN
+//#define SEQUENTIAL_RUN
 
 int main() {
   size_t n = 134217728;
@@ -75,6 +75,6 @@ int main() {
     }
     double time = *std::min_element(time_list.begin(), time_list.end());
 
-    std::cout << "OpenMP approximated function run time: " << time << std::endl;
+    std::cout << "OpenMP function w exp run time: " << time << std::endl;
   }
 }

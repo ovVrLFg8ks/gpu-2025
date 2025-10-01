@@ -2,7 +2,6 @@
 #define __GELU_SEQ_H
 
 #include <cmath>
-#include <numbers>
 #include <vector>
 
 std::vector<float> GeluSEQ(const std::vector<float>& input);
